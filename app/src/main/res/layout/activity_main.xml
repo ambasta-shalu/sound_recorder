@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/boy_recording1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_headline"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="4dp"
+        android:text="Let's get set\n recording \n Sound"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="Start"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_baseline_mic_24"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white"
+        app:rippleColor="@color/purple_200" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pause"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="Pause"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_baseline_resume_24"
+        app:iconGravity="textStart"
+        app:iconTint="@color/purple_500" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_play"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="Play"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_baseline_play_24"
+        app:iconGravity="textStart"
+        app:iconTint="@color/purple_500" />
+
+
+</RelativeLayout>
